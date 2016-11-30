@@ -9,7 +9,7 @@ import android.support.v7.app.AppCompatActivity;
 import hanyongguang1124.test.bwie.com.yunifang.R;
 
 public class LaunchBActivity extends AppCompatActivity {
-    
+
     Handler handler=new Handler(){
         @Override
         public void handleMessage(Message msg) {
