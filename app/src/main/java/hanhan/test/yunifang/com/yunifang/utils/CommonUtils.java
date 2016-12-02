@@ -1,6 +1,7 @@
 package hanhan.test.yunifang.com.yunifang.utils;
 
 import android.content.Context;
+import android.content.SharedPreferences;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Handler;
@@ -9,6 +10,8 @@ import android.view.View;
 import hanhan.test.yunifang.com.yunifang.app.MyApplication;
 
 public class CommonUtils {
+    private static SharedPreferences sharedPreferences;
+    public static final String tag = "key";
     public static Context getContext() {
         return MyApplication.getContext();
     }
@@ -17,7 +20,7 @@ public class CommonUtils {
         return MyApplication.getHandler();
     }
 
-    public static Thread getMainThread() {
+    public static Thread getMainThread(Runnable runnable) {
         return MyApplication.getMainThread();
     }
 
@@ -100,4 +103,47 @@ public class CommonUtils {
     public static void removeCallBack(Runnable runnable) {
         getHandler().removeCallbacks(runnable);
     }
+
+//    //文件存储
+//    public static void savesp( String flag,String str) {
+//        if (sharedPreferences == null) {
+//            sharedPreferences = MyApplication.getContext().getSharedPreferences(tag, MyApplication.getContext().MODE_PRIVATE);
+//        }
+//        SharedPreferences.Editor edit = sharedPreferences.edit();
+//        edit.putString(flag, str);
+//        edit.commit();
+//    }
+//    public static void savesp2( String flag,boolean str) {
+//        if (sharedPreferences == null) {
+//            sharedPreferences = MyApplication.getContext().getSharedPreferences(tag, MyApplication.getContext().MODE_PRIVATE);
+//        }
+//        SharedPreferences.Editor edit = sharedPreferences.edit();
+//        edit.putBoolean(flag, str);
+//        edit.commit();
+//    }
+//
+//    //文件获取
+//    public static String getsp(String flag) {
+//        if (sharedPreferences == null) {
+//            sharedPreferences = MyApplication.getContext().getSharedPreferences(tag, MyApplication.getContext().MODE_PRIVATE);
+//        }
+//        return sharedPreferences.getString(flag, "");
+//    }
+//    public static void getsp2(String flag,boolean str) {
+//        if (sharedPreferences == null) {
+//            sharedPreferences = MyApplication.getContext().getSharedPreferences(tag, MyApplication.getContext().MODE_PRIVATE);
+//        }
+//        sharedPreferences.getBoolean(flag,str);
+//
+//    }
+//    //文件清空
+//    public static  void clearSp(String flag){
+//        if (sharedPreferences == null) {
+//            sharedPreferences = MyApplication.getContext().getSharedPreferences(tag, MyApplication.getContext().MODE_PRIVATE);
+//        }
+//        SharedPreferences.Editor edit = sharedPreferences.edit();
+//        edit.remove(flag);
+//        edit.commit();
+//
+//    }
 }

@@ -17,7 +17,7 @@ public class LaunchAActivity extends AppCompatActivity {
                Intent intent=new Intent(LaunchAActivity.this,LaunchBActivity.class);
                startActivity(intent);
                finish();
-               handler.sendEmptyMessageDelayed(1,3000);
+
            }
        }
    };
@@ -26,7 +26,7 @@ public class LaunchAActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_launch_a);
 
-        handler.sendEmptyMessageDelayed(1,3000);
+        handler.sendEmptyMessageDelayed(1,2000);
 
     }
 }

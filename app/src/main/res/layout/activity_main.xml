@@ -25,7 +25,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:button="@null"
-            android:drawableTop="@mipmap/bottom_tab_home_selected"
+            android:drawableTop="@drawable/selector1"
             android:gravity="center_horizontal"
             android:text="首页" />
 
@@ -36,7 +36,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:button="@null"
-            android:drawableTop="@mipmap/bottom_tab_classify_selected"
+            android:drawableTop="@drawable/selector2"
             android:gravity="center_horizontal"
             android:text="分类" />
 
@@ -47,7 +47,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:button="@null"
-            android:drawableTop="@mipmap/bottom_tab_shopping_selected"
+            android:drawableTop="@drawable/selector3"
             android:gravity="center_horizontal"
             android:text="购物车" />
 
@@ -58,7 +58,7 @@
             android:layout_gravity="center_horizontal"
             android:layout_weight="1"
             android:button="@null"
-            android:drawableTop="@mipmap/bottom_tab_user_selected"
+            android:drawableTop="@drawable/selector4"
             android:gravity="center_horizontal"
             android:text="我的" />
     </RadioGroup>

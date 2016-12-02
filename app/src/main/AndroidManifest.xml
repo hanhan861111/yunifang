@@ -12,13 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name="hanhan.test.yunifang.com.yunifang.yunifang.MainActivity"></activity>
-        <activity android:name="hanhan.test.yunifang.com.yunifang.yunifang.LaunchAActivity" />
-        <activity android:name="hanhan.test.yunifang.com.yunifang.yunifang.LaunchBActivity">
+        <activity android:name="hanhan.test.yunifang.com.yunifang.yunifang.LaunchAActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+        </activity>
+        <activity android:name="hanhan.test.yunifang.com.yunifang.yunifang.LaunchBActivity">
+
         </activity>
     </application>
 

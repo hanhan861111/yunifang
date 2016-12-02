@@ -25,4 +25,6 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.4.0'
     compile files('libs/gson-2.2.4.jar')
     compile 'com.squareup.okhttp:okhttp:2.4.0'
+    //    compile project(':autolayout')
+    compile project(':springview')
 }

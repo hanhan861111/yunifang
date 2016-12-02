@@ -3,7 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@mipmap/shouye"
-    tools:context="hanhan.test.yunifang.com.yunifang.yunifang.LaunchAActivity">
 
+    tools:context="hanhan.test.yunifang.com.yunifang.yunifang.LaunchAActivity">
+         <ImageView
+             android:background="@mipmap/shouye"
+             android:layout_width="match_parent"
+             android:layout_height="match_parent" />
 </RelativeLayout>

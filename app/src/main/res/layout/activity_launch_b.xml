@@ -3,10 +3,19 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-tools:context="hanhan.test.yunifang.com.yunifang.yunifang.LaunchBActivity">
-    <android.support.v4.view.ViewPager
-        android:id="@+id/viewpager_launch_b"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"></android.support.v4.view.ViewPager>
+    android:background="@mipmap/launch"
+     tools:context="hanhan.test.yunifang.com.yunifang.yunifang.LaunchBActivity">
+    <!--<ImageView-->
+        <!--android:id="@+id/img_launch_b"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent" />-->
+
+    <Button
+        android:id="@+id/bt_launch_b"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 
 </RelativeLayout>
